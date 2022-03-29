@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Child component" icon-name="custom: custom6">
+        <b>Hello {greeting}</b>
+
+        <div>
+            <lightning-input label=" Type Here Your Name" onchange={greetinghandler}></lightning-input>
+        </div>
+        <br />
+        <br />
+    </lightning-card>
+
+    <lightning-card title="parent to child" icon-name="custom:custom6">
+        <div class="slds-var-p-around_medium lgc-bg">
+            <lightning-tile label={meetingRoomInfo.roomName} href="/path/to/somewhere">
+                <p class="slds-truncate" title={meetingRoomInfo.roomCapacity}>Room Capacity: {meetingRoomInfo.roomCapacity}</p>
+            </lightning-tile>
+        </div>
+    </lightning-card>
+</template>
